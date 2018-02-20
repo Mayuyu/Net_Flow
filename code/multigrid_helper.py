@@ -102,7 +102,7 @@ def interpolation_1d(vC, vF):
     Output: vF
     '''
     
-    vF[::2] = vC[:];
+    vF[::2] = vC[:]
     vF[1:-1:2] = 0.5 * (vC[:-1] + vC[1:])
     
     return vF
